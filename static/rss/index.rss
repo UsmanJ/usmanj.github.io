@@ -1,12 +1,12 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 15 Aug 2015 13:37:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Setting up a Ghost blog on GitHub</title><description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 15 Aug 2015 13:40:02 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Setting up a Ghost blog on GitHub</title><description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 
-&lt;h2&gt;Installing Node.js&lt;/h2&gt;  
+&lt;h3&gt;Installing Node.js&lt;/h3&gt;  
 
 &lt;p&gt;To begin with, we need to install Node.js because Ghost is written in Node.js.&lt;/p&gt;
 
 &lt;p&gt;To do this,&lt;/p&gt;</description><link>http://localhost:2368/setting-up-a-ghost-blog-on-github/</link><guid isPermaLink="false">8c225039-3673-4011-a3b4-6bbbd80767b5</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Fri, 14 Aug 2015 12:14:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 
-&lt;h2&gt;Installing Node.js&lt;/h2&gt;  
+&lt;h3&gt;Installing Node.js&lt;/h3&gt;  
 
 &lt;p&gt;To begin with, we need to install Node.js because Ghost is written in Node.js.&lt;/p&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;This should install Node.js&lt;/p&gt;
 
-&lt;h2&gt;Installing Buster&lt;/h2&gt;  
+&lt;h3&gt;Installing Buster&lt;/h3&gt;  
 
 &lt;p&gt;Now we need to install Buster which is a tool that will allow you to export your Ghost blog pages into static pages; which you can then deploy to your blog on GitHub. To install Buster we will also need to install Python.&lt;/p&gt;
 
@@ -32,7 +32,7 @@
 
 &lt;p&gt;This should install Buster for you.&lt;/p&gt;
 
-&lt;h2&gt;Setting up Ghost locally&lt;/h2&gt;  
+&lt;h3&gt;Setting up Ghost locally&lt;/h3&gt;  
 
 &lt;p&gt;Now we need to set up Ghost locally. To do this you will need to download Ghost from their website (&lt;a href="https://www.ghost.org"&gt;https://www.ghost.org&lt;/a&gt;).&lt;/p&gt;
 
@@ -60,13 +60,13 @@
 &lt;li&gt;&lt;a href="http://127.0.0.1:2368/ghost"&gt;http://127.0.0.1:2368/ghost&lt;/a&gt;&lt;/li&gt;  
 &lt;/ul&gt;
 
-&lt;h2&gt;Create a GitHub repository&lt;/h2&gt;  
+&lt;h3&gt;Create a GitHub repository&lt;/h3&gt;  
 
 &lt;p&gt;Once you have created your account, you will now need to create a new repository on GitHub which will be connected to your ghost blog. Leave ghost to run locally in the background and just minimise that shell for now as we will not be needing it (but will need it to carry on running locally in the background for when we want to deploy the blog to GitHub).&lt;/p&gt;
 
 &lt;p&gt;Go to your GitHub account and create a repository called "username.github.io". Change username to your own username. For example in my  case the repository is called "usmanj.github.io". &lt;/p&gt;
 
-&lt;h2&gt;Create a directory for your static pages&lt;/h2&gt;  
+&lt;h3&gt;Create a directory for your static pages&lt;/h3&gt;  
 
 &lt;p&gt;Now go back to your first terminal shell (which should be in the ghost directory) and create a new folder. Call it the same name as your repository (username.github.io). You do not have to do this, but I did this because it will allow you to keep your static pages separate.&lt;/p&gt;
 
@@ -75,7 +75,7 @@
 &lt;li&gt;&lt;code&gt;cd username.github.io&lt;/code&gt;&lt;/li&gt;  
 &lt;/ul&gt;
 
-&lt;h2&gt;Setup Buster&lt;/h2&gt;  
+&lt;h3&gt;Setup Buster&lt;/h3&gt;  
 
 &lt;p&gt;Now that you have made another directory for the static pages, you can setup Buster in that folder.&lt;/p&gt;
 
@@ -89,7 +89,7 @@
 &lt;li&gt;&lt;code&gt;buster generate --domain=http://127.0.0.1:2368&lt;/code&gt;&lt;/li&gt;  
 &lt;/ul&gt;
 
-&lt;h2&gt;Push static folder to GitHub&lt;/h2&gt;  
+&lt;h3&gt;Push static folder to GitHub&lt;/h3&gt;  
 
 &lt;p&gt;Now enter that directory in your terminal by using &lt;code&gt;cd static&lt;/code&gt; and then add all the files in that static folder to your git. Initialise your git by &lt;code&gt;git init&lt;/code&gt; followed by adding all files to the git by running &lt;code&gt;git add --all&lt;/code&gt;. Once this is done, commit the changes using &lt;code&gt;git commit -m "Initial commit"&lt;/code&gt; and finally push it all to your GitHub repository.&lt;/p&gt;
 
@@ -104,7 +104,7 @@
 
 &lt;p&gt;If it isn't, drop me a message on Slack and I will try to help you get it up and running. &lt;/p&gt;
 
-&lt;h2&gt;Deploying changes to GitHub&lt;/h2&gt;  
+&lt;h3&gt;Deploying changes to GitHub&lt;/h3&gt;  
 
 &lt;p&gt;Last but not least, how will we deploy any changes to the local blog? &lt;/p&gt;
 
