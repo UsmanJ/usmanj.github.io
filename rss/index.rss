@@ -1,0 +1,132 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 15 Aug 2015 12:19:56 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Setting up a Ghost blog on GitHub</title><description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;h6&gt;Installing Node.js&lt;/h6&gt;  
+
+&lt;p&gt;To begin with, we need to install Node.js because Ghost is written in Node.js.&lt;/p&gt;
+
+&lt;p&gt;To do this,&lt;/p&gt;</description><link>http://localhost:2368/setting-up-a-ghost-blog-on-github/</link><guid isPermaLink="false">8c225039-3673-4011-a3b4-6bbbd80767b5</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Fri, 14 Aug 2015 12:14:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;h6&gt;Installing Node.js&lt;/h6&gt;  
+
+&lt;p&gt;To begin with, we need to install Node.js because Ghost is written in Node.js.&lt;/p&gt;
+
+&lt;p&gt;To do this, open your terminal and enter the following command:  &lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;brew install node&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;  
+
+&lt;p&gt;This should install Node.js&lt;/p&gt;
+
+&lt;h6&gt;Installing Buster&lt;/h6&gt;  
+
+&lt;p&gt;Now we need to install Buster which is a tool that will allow you to export your Ghost blog pages into static pages; which you can then deploy to your blog on GitHub. To install Buster we will also need to install Python.&lt;/p&gt;
+
+&lt;p&gt;To install Buster, enter the following commands in your terminal:  &lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;brew install python&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;brew install wget&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;pip install buster&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;This should install Buster for you.&lt;/p&gt;
+
+&lt;h6&gt;Setting up Ghost locally&lt;/h6&gt;  
+
+&lt;p&gt;Now we need to set up Ghost locally. To do this you will need to download Ghost from their website (&lt;a href="https://www.ghost.org"&gt;https://www.ghost.org&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Once you have downloaded ghost and exported it into the directory that you want to keep it in, you will need to set it up locally.&lt;/p&gt;
+
+&lt;p&gt;Start off by opening another terminal window and going to your ghost directory.&lt;/p&gt;
+
+&lt;p&gt;Install npm using the following command. npm is a manager for installing Node.js applications.&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;Now that we have installed npm, we need to start it in order to run Ghost locally. We do this by using the following command:&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;npm start&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;Now Ghost will be running locally on your machine.&lt;/p&gt;
+
+&lt;p&gt;Go to the following link in order to create a Ghost account locally.&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;a href="http://127.0.0.1:2368/ghost"&gt;http://127.0.0.1:2368/ghost&lt;/a&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;h6&gt;Create a GitHub repository&lt;/h6&gt;  
+
+&lt;p&gt;Once you have created your account, you will now need to create a new repository on GitHub which will be connected to your ghost blog. Leave ghost to run locally in the background and just minimise that shell for now as we will not be needing it (but will need it to carry on running locally in the background for when we want to deploy the blog to GitHub).&lt;/p&gt;
+
+&lt;p&gt;Go to your GitHub account and create a repository called "username.github.io". Change username to your own username. For example in my  case the repository is called "usmanj.github.io". &lt;/p&gt;
+
+&lt;h6&gt;Create a directory for your static pages&lt;/h6&gt;  
+
+&lt;p&gt;Now go back to your first terminal shell (which should be in the ghost directory) and create a new folder. Call it the same name as your repository (username.github.io). You do not have to do this, but I did this because it will allow you to keep your static pages separate.&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;mkdir username.github.io&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;cd username.github.io&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;h6&gt;Setup Buster&lt;/h6&gt;  
+
+&lt;p&gt;Now that you have made another directory for the static pages, you can setup Buster in that folder.&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;buster setup https://github.com/username/username.github.io.git&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;Once this is done, run the following command which will generate all the needed files under the static subfolder created in the previous step.&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;buster generate --domain=http://127.0.0.1:2368&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;h6&gt;Push static folder to GitHub&lt;/h6&gt;  
+
+&lt;p&gt;Now enter that directory in your terminal by using &lt;code&gt;cd static&lt;/code&gt; and then add all the files in that static folder to your git by &lt;code&gt;git add --all&lt;/code&gt; followed by &lt;code&gt;git commit -m "Initial commit"&lt;/code&gt; and finally push it all to your GitHub repository.&lt;/p&gt;
+
+&lt;p&gt;To push to your repository you will need to add the remote using the following commands (replace username with your own username):&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;git remote add origin https://github.com/username/username.git&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;HURRRAAAYYY!!! Your blog should now be online on &lt;code&gt;username.github.io&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If it isn't, drop me a message on Slack and I will try to help you get it up and running. &lt;/p&gt;
+
+&lt;h6&gt;Deploying changes to GitHub&lt;/h6&gt;  
+
+&lt;p&gt;Last but not least, how will we deploy any changes to the local blog? &lt;/p&gt;
+
+&lt;p&gt;Once you have added/edited/deleted blog posts from your local ghost blog, you will need to deploy the changes to GitHub. To do this, go to your username.github.io folder directory in terminal (do not go into static).&lt;/p&gt;
+
+&lt;p&gt;Once your are in there and your local ghost is running in another shell; run the following commands:  &lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;&lt;code&gt;buster generate&lt;/code&gt;&lt;/li&gt;  
+&lt;li&gt;&lt;code&gt;buster deploy&lt;/code&gt;&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;Hopefully this helps you guys if you were stuck.&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>Pre-course week 1</title><description>&lt;p&gt;So week 1 flew by. Our pre-course week 1 was based on command-line. I had not ever studied command-line prior to this. I studied the online material which was posted on the pre-course website followed by trying out the practise exercises. I was surprised by how quickly I picked things&lt;/p&gt;</description><link>http://localhost:2368/pre-course-week-1/</link><guid isPermaLink="false">5c39e942-b8a8-400a-93d3-288db7f01597</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Mon, 10 Aug 2015 12:15:00 GMT</pubDate><content:encoded>&lt;p&gt;So week 1 flew by. Our pre-course week 1 was based on command-line. I had not ever studied command-line prior to this. I studied the online material which was posted on the pre-course website followed by trying out the practise exercises. I was surprised by how quickly I picked things up. The few things that I struggled with were solved quickly by the support of my peers via the slack app.&lt;/p&gt;
+
+&lt;p&gt;I began on the weekly test on the Friday and it didn't take too long to complete (but took longer than the 1 hours target stated in the test description). The instructions were really straight forward and some material required you to conduct your own research (google). I learnt a lot from this exercise and I'm sure next week I will learn even more!&lt;/p&gt;
+
+&lt;p&gt;This week I did not use the git issues page which I will try to make use of next week. However I have been using Slack to communicate with my peers which has proved to be very beneficial.&lt;/p&gt;</content:encoded></item><item><title>Makers Academy Pre-Course Launch Evening</title><description>&lt;p&gt;August 3rd was the day I first went in to meet my fellow students at Makers. As I got to the building straight away I met a new student like myself. By the time I was upstairs I had met 3 new people who were ambitious and pumped up ready&lt;/p&gt;</description><link>http://localhost:2368/makers-academy-pre-course-launch-evening/</link><guid isPermaLink="false">5331104d-c8ff-47d0-9a84-839db3adbe3d</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sat, 08 Aug 2015 17:35:00 GMT</pubDate><content:encoded>&lt;p&gt;August 3rd was the day I first went in to meet my fellow students at Makers. As I got to the building straight away I met a new student like myself. By the time I was upstairs I had met 3 new people who were ambitious and pumped up ready to learn.&lt;/p&gt;
+
+&lt;p&gt;The launch was short but sweet. All the students of the September cohort introduced themselves. Students were from a wide variety of backgrounds; lawyers to a student fresh out of high school. Nikesh continued the evening by introducing us to GitHub, Slack and the Pre-course material.&lt;/p&gt;
+
+&lt;p&gt;At the end of the short launch; some students went off to the local bar down the road and others headed home.&lt;/p&gt;</content:encoded></item></channel></rss>
