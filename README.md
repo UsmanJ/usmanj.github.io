@@ -1,2 +1,1 @@
-# usmanj.github.io
-Ghost blog using Buster.
+# Ghost blog using Buster
