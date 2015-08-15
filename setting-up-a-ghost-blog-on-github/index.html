@@ -1,3 +1,4 @@
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +22,11 @@
     <meta property="og:description" content="">
 
     <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="http://127.0.0.1:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link href="http://localhost:2368/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/uno.css?v=db0597acc2">
+    <link rel="stylesheet" type="text/css" href="../assets/css/uno.css?v=e17ce29cfa">
 
-    <link rel="canonical" href="http://localhost:2368/setting-up-a-ghost-blog-on-github/">
+    <link rel="canonical" href="index.html">
     
     <meta property="og:site_name" content="Becoming a Maker">
     <meta property="og:type" content="article">
@@ -33,7 +34,7 @@
     <meta property="og:description" content="Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too. Installing Node.js   To begin with, we need to install Node.js...">
     <meta property="og:url" content="http://localhost:2368/setting-up-a-ghost-blog-on-github/">
     <meta property="article:published_time" content="2015-08-14T12:14:00.000Z">
-    <meta property="article:modified_time" content="2015-08-15T12:14:23.624Z">
+    <meta property="article:modified_time" content="2015-08-15T13:39:34.197Z">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Setting up a Ghost blog on GitHub">
@@ -56,13 +57,13 @@
     "headline": "Setting up a Ghost blog on GitHub",
     "url": "http://localhost:2368/setting-up-a-ghost-blog-on-github/",
     "datePublished": "2015-08-14T12:14:00.000Z",
-    "dateModified": "2015-08-15T12:14:23.624Z",
+    "dateModified": "2015-08-15T13:39:34.197Z",
     "description": "Having struggled to host my blog on GitHub I thought I&#x27;d write up a blog post about it to help everyone who may be struggling with it too. Installing Node.js   To begin with, we need to install Node.js..."
 }
     </script>
 
     <meta name="generator" content="Ghost 0.6">
-    <link rel="alternate" type="application/rss+xml" title="Becoming a Maker" href="http://localhost:2368/rss/">
+    <link rel="alternate" type="application/rss+xml" title="Becoming a Maker" href="../rss/index.html">
 
 </head>
 <body class="post-template no-js">
@@ -78,7 +79,7 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-        <h1 class="panel-cover__title panel-title"><a href="http://localhost:2368" title="link to homepage for Becoming a Maker">Becoming a Maker</a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="../" title="link to homepage for Becoming a Maker">Becoming a Maker</a></h1>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">Thoughts, stories and ideas.</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
@@ -157,7 +158,7 @@
     <section class="post">
       <p></p><p>Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.</p>
 
-<h6>Installing Node.js</h6>  
+<h3>Installing Node.js</h3>  
 
 <p>To begin with, we need to install Node.js because Ghost is written in Node.js.</p>
 
@@ -169,7 +170,7 @@
 
 <p>This should install Node.js</p>
 
-<h6>Installing Buster</h6>  
+<h3>Installing Buster</h3>  
 
 <p>Now we need to install Buster which is a tool that will allow you to export your Ghost blog pages into static pages; which you can then deploy to your blog on GitHub. To install Buster we will also need to install Python.</p>
 
@@ -183,7 +184,7 @@
 
 <p>This should install Buster for you.</p>
 
-<h6>Setting up Ghost locally</h6>  
+<h3>Setting up Ghost locally</h3>  
 
 <p>Now we need to set up Ghost locally. To do this you will need to download Ghost from their website (<a href="https://www.ghost.org">https://www.ghost.org</a>).</p>
 
@@ -208,16 +209,16 @@
 <p>Go to the following link in order to create a Ghost account locally.</p>
 
 <ul>  
-<li><a href="../ghost">http://127.0.0.1:2368/ghost</a></li>  
+<li><a href="http://127.0.0.1:2368/ghost">http://127.0.0.1:2368/ghost</a></li>  
 </ul>
 
-<h6>Create a GitHub repository</h6>  
+<h3>Create a GitHub repository</h3>  
 
 <p>Once you have created your account, you will now need to create a new repository on GitHub which will be connected to your ghost blog. Leave ghost to run locally in the background and just minimise that shell for now as we will not be needing it (but will need it to carry on running locally in the background for when we want to deploy the blog to GitHub).</p>
 
 <p>Go to your GitHub account and create a repository called "username.github.io". Change username to your own username. For example in my  case the repository is called "usmanj.github.io". </p>
 
-<h6>Create a directory for your static pages</h6>  
+<h3>Create a directory for your static pages</h3>  
 
 <p>Now go back to your first terminal shell (which should be in the ghost directory) and create a new folder. Call it the same name as your repository (username.github.io). You do not have to do this, but I did this because it will allow you to keep your static pages separate.</p>
 
@@ -226,7 +227,7 @@
 <li><code>cd username.github.io</code></li>  
 </ul>
 
-<h6>Setup Buster</h6>  
+<h3>Setup Buster</h3>  
 
 <p>Now that you have made another directory for the static pages, you can setup Buster in that folder.</p>
 
@@ -240,14 +241,14 @@
 <li><code>buster generate --domain=http://127.0.0.1:2368</code></li>  
 </ul>
 
-<h6>Push static folder to GitHub</h6>  
+<h3>Push static folder to GitHub</h3>  
 
-<p>Now enter that directory in your terminal by using <code>cd static</code> and then add all the files in that static folder to your git by <code>git add --all</code> followed by <code>git commit -m "Initial commit"</code> and finally push it all to your GitHub repository.</p>
+<p>Now enter that directory in your terminal by using <code>cd static</code> and then add all the files in that static folder to your git. Initialise your git by <code>git init</code> followed by adding all files to the git by running <code>git add --all</code>. Once this is done, commit the changes using <code>git commit -m "Initial commit"</code> and finally push it all to your GitHub repository.</p>
 
 <p>To push to your repository you will need to add the remote using the following commands (replace username with your own username):</p>
 
 <ul>  
-<li><code>git remote add origin https://github.com/username/username.git</code></li>  
+<li><code>git remote add origin https://github.com/username/username.github.io</code></li>  
 <li><code>git push -u origin master</code></li>  
 </ul>
 
@@ -255,7 +256,7 @@
 
 <p>If it isn't, drop me a message on Slack and I will try to help you get it up and running. </p>
 
-<h6>Deploying changes to GitHub</h6>  
+<h3>Deploying changes to GitHub</h3>  
 
 <p>Last but not least, how will we deploy any changes to the local blog? </p>
 
@@ -287,8 +288,8 @@
         </div>
     </div>
 
-    <script src="../public/jquery.js?v=db0597acc2"></script>
+    <script src="../public/jquery.js?v=e17ce29cfa"></script>
 
-    <script type="text/javascript" src="../assets/js/main.js?v=db0597acc2"></script>
+    <script type="text/javascript" src="../assets/js/main.js?v=e17ce29cfa"></script>
 
 </body>
