@@ -1,4 +1,20 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 15 Aug 2015 14:04:30 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Setting up a Ghost blog on GitHub</title><description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sun, 16 Aug 2015 14:09:13 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Pre-Course Week 2</title><description>&lt;p&gt;This weeks task involved getting use to version control (git). I had used git previously on one occasion, but I ended up deleting everything from the git and loosing all my work. This time round I managed to keep all my work safe.&lt;/p&gt;
+
+&lt;p&gt;We were advised to go over the&lt;/p&gt;</description><link>http://localhost:2368/pre-course-week-2/</link><guid isPermaLink="false">96781a78-a13c-4dc5-8fb2-d9a05a9a4958</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sun, 16 Aug 2015 14:08:13 GMT</pubDate><content:encoded>&lt;p&gt;This weeks task involved getting use to version control (git). I had used git previously on one occasion, but I ended up deleting everything from the git and loosing all my work. This time round I managed to keep all my work safe.&lt;/p&gt;
+
+&lt;p&gt;We were advised to go over the exercises on &lt;a href="http://gitimmersion.com"&gt;Git Immersion&lt;/a&gt;. This was very hands on and increased my understanding of git immensely. However I did struggle to understand the variation between merging and rebasing.&lt;/p&gt;
+
+&lt;p&gt;This week I also deployed my Ghost blog on GitHub. This was made easy due to my understanding of Git and GitHub. Having spoken to some of my peers on Slack, I gathered that many people were struggling to deploy their blogs onto GitHub. Due to this I created a 'How to' blog on how to create a Ghost blog locally and then deploy it onto GitHub. This can be found &lt;a href="http://usmanj.github.io/setting-up-a-ghost-blog-on-github/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Overall the experience has been very hands on and I have learnt a lot about using git/GitHub. I have also developed further my command line skills from the previous week by using command line constantly during the course of the week.&lt;/p&gt;
+
+&lt;p&gt;I managed to finish all the version control work early and was pretty confident with it so I went on and started going over &lt;a href="https://pine.fm/LearnToProgram/chap_00.html"&gt;Chris Pine's exercises&lt;/a&gt;. I had done this prior to my Maker's interview but decided to go over it again to jog my memory.&lt;/p&gt;
+
+&lt;p&gt;That's it for this week. &lt;/p&gt;
+
+&lt;p&gt;Follow my blog for more updates during the next week and many more weeks to come.&lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>Setting up a Ghost blog on GitHub</title><description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Having struggled to host my blog on GitHub I thought I'd write up a blog post about it to help everyone who may be struggling with it too.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 
 &lt;h3&gt;Installing Node.js&lt;/h3&gt;  
 
