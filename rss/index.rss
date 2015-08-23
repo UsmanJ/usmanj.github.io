@@ -1,4 +1,32 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sun, 16 Aug 2015 18:58:26 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Pre-Course Week 2</title><description>&lt;p&gt;This weeks task involved getting use to version control (git). I had used git previously on one occasion, but I ended up deleting everything from the git and loosing all my work. This time round I managed to keep all my work safe.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sun, 23 Aug 2015 21:45:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Pre-Course Week 3</title><description>&lt;p&gt;&lt;b&gt;It's been a crazy week! Chris Pine tried to take over my life. But I dumped him for Ruby Kickstart.&lt;/b&gt; &lt;/p&gt;
+
+&lt;p&gt;As we were told at the pre-course launch, after week 2 things were going to get real hard. And they were. Ruby literally took over my life. The torture of&lt;/p&gt;</description><link>http://localhost:2368/pre-course-week-3/</link><guid isPermaLink="false">02694639-5a7e-4b5b-a6ae-4388dc14ce4f</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sun, 23 Aug 2015 21:45:11 GMT</pubDate><content:encoded>&lt;p&gt;&lt;b&gt;It's been a crazy week! Chris Pine tried to take over my life. But I dumped him for Ruby Kickstart.&lt;/b&gt; &lt;/p&gt;
+
+&lt;p&gt;As we were told at the pre-course launch, after week 2 things were going to get real hard. And they were. Ruby literally took over my life. The torture of being so close to solving a challenge yet being so far. My head started to hurt by the end of the week. But theres no giving up! In fact it feels like a game, its so addictive. You don't even feel like your working/studying. It's just so fun. My peers are all so much fun too. The environment is so cool! I'm loving it!&lt;/p&gt;
+
+&lt;p&gt;Anyway so I managed to complete Ruby Kickstarter (going to try and complete Chris Pine this week) and I've managed to get &lt;b&gt;41&lt;/b&gt; points on codewars. I'm going to try and get 50 by the end of tomorrow (fingers crossed). &lt;/p&gt;
+
+&lt;p&gt;I've had a long week so I'm going to hit the bed. Need to be up early tomorrow for some more Ruby! See what I mean, its addictive!&lt;/p&gt;
+
+&lt;p&gt;Adios for now. &lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>Pair Programming and Graduation Day!</title><description>&lt;p&gt;Graduation day for the seniors! An exciting day for all of Makers. So we thought we'd make use of this day; we decided to meet up earlier and crack on with some pair programming.&lt;/p&gt;
+
+&lt;p&gt;We met up for 2.30pm and got into our pairs. We used a ruby built&lt;/p&gt;</description><link>http://localhost:2368/pair-programming-and-graduation-day/</link><guid isPermaLink="false">2218aaca-d81f-4000-b59d-42c1b35c3788</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sun, 23 Aug 2015 21:32:13 GMT</pubDate><content:encoded>&lt;p&gt;Graduation day for the seniors! An exciting day for all of Makers. So we thought we'd make use of this day; we decided to meet up earlier and crack on with some pair programming.&lt;/p&gt;
+
+&lt;p&gt;We met up for 2.30pm and got into our pairs. We used a ruby built software to randomly put us in our pairs. You can find the code for this in my repos.&lt;/p&gt;
+
+&lt;p&gt;Pair programming was a fun exercie which was extremely beneficial. I felt that I learnt a lot during this exercise. I learnt of new ways to go about solving a situation and also found out about various tools which make it easier to solve problems. This was a team work exercise which allowed me to learn from my peer and also share my knowledge which they may not have. After a few hours of pair programming, it was time for graduation.&lt;/p&gt;
+
+&lt;p&gt;Graduation consisted of 6 presentations which all lasted roughly 5 minutes each. The presentations were amazing. The platforms that each team had built with only 12 weeks of coding were really a true representation of how much one can learn in such a short time. The teams all used various technologies in their projects and were not restricted to just Ruby.&lt;/p&gt;
+
+&lt;p&gt;After the graduation we all socialised for a good 2 hours. Everyone was so friendly. It felt as if I knew everyone since ages. A bunch of cool people all under one roof! Before joining Makers I didn't know what to expect; but I'm honestly so happy to be a part of this hard working team. &lt;/p&gt;
+
+&lt;p&gt;Everyone went out after but I had to attend a family dinner so couldn't go along with everyone; otherwise I definitely would have! Theres always next time. &lt;/p&gt;
+
+&lt;p&gt;So that was graduation day. A great experience. Hopefully many more great experiences to come. Keep an eye out on my blog and follow my journey at Makers Academy.&lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>Pre-Course Week 2</title><description>&lt;p&gt;This weeks task involved getting use to version control (git). I had used git previously on one occasion, but I ended up deleting everything from the git and loosing all my work. This time round I managed to keep all my work safe.&lt;/p&gt;
 
 &lt;p&gt;We were advised to go over the&lt;/p&gt;</description><link>http://localhost:2368/pre-course-week-2/</link><guid isPermaLink="false">96781a78-a13c-4dc5-8fb2-d9a05a9a4958</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sun, 16 Aug 2015 14:08:13 GMT</pubDate><content:encoded>&lt;p&gt;This weeks task involved getting use to version control (git). I had used git previously on one occasion, but I ended up deleting everything from the git and loosing all my work. This time round I managed to keep all my work safe.&lt;/p&gt;
 
