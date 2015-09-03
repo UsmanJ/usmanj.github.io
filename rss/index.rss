@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Thu, 03 Sep 2015 10:14:56 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>What is Red-Green-Refactor and how does it relate to TDD?</title><description>&lt;p&gt;So what is &lt;b&gt;&lt;font color="red"&gt;Red&lt;/font&gt;-&lt;font color="green"&gt;Green&lt;/font&gt;-&lt;font color="black"&gt;Refactor&lt;/font&gt;&lt;/b&gt; I hear you asking?&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Thu, 03 Sep 2015 13:29:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>What is Red-Green-Refactor and how does it relate to TDD?</title><description>&lt;p&gt;So what is &lt;b&gt;&lt;font color="red"&gt;Red&lt;/font&gt;-&lt;font color="green"&gt;Green&lt;/font&gt;-&lt;font color="black"&gt;Refactor&lt;/font&gt;&lt;/b&gt; I hear you asking?&lt;/p&gt;
 
 &lt;p&gt;Red-Green-Refactor is one of many methods for conducting TDD (test driven development). The steps are red, green and refactor. These are defined below:&lt;/p&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;The first working  version of any code can always be improved - even if its not messy. Therefore you would use Red-Green-Refactor to improve the code, make it cleaner, make it more readable and also remove any duplications. Using this method allows you to refactor safely without breaking any code as you are constantly testing the code.&lt;/p&gt;
 
-&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>Pre-Course Week 4</title><description>&lt;p&gt;&lt;b&gt;WOW. Pre-course is over!!&lt;/b&gt; &lt;/p&gt;
+&lt;p&gt;Usman &amp;amp; Dom&lt;/p&gt;</content:encoded></item><item><title>Pre-Course Week 4</title><description>&lt;p&gt;&lt;b&gt;WOW. Pre-course is over!!&lt;/b&gt; &lt;/p&gt;
 
 &lt;p&gt;I've learnt a lot during this month. However the last week was hectic. Had to make the most of the last week before becoming a FULL-TIME MAKER! So I went away for three days to Manchester &amp;amp; Sheffield with the family; to meet family. &lt;/p&gt;
 
