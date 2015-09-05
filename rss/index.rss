@@ -1,4 +1,26 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Thu, 03 Sep 2015 13:29:25 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>What is Red-Green-Refactor and how does it relate to TDD?</title><description>&lt;p&gt;So what is &lt;b&gt;&lt;font color="red"&gt;Red&lt;/font&gt;-&lt;font color="green"&gt;Green&lt;/font&gt;-&lt;font color="black"&gt;Refactor&lt;/font&gt;&lt;/b&gt; I hear you asking?&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 05 Sep 2015 21:45:33 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>First full-time week at Makers</title><description>&lt;p&gt;The first week is already over!? That went fast.&lt;/p&gt;
+
+&lt;p&gt;This week was such an amazing week. Maybe one of the most fun weeks I've had in such a long time. &lt;/p&gt;
+
+&lt;p&gt;We missed a day this week due to the bank holiday on Monday. We started on Tuesday. Tuesday was a&lt;/p&gt;</description><link>http://localhost:2368/first-full-time-week-at-makers/</link><guid isPermaLink="false">5a915a84-a06c-4b2a-9edf-b2bc14d557e9</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Sat, 05 Sep 2015 21:45:23 GMT</pubDate><content:encoded>&lt;p&gt;The first week is already over!? That went fast.&lt;/p&gt;
+
+&lt;p&gt;This week was such an amazing week. Maybe one of the most fun weeks I've had in such a long time. &lt;/p&gt;
+
+&lt;p&gt;We missed a day this week due to the bank holiday on Monday. We started on Tuesday. Tuesday was a chilled day. No coding. Just getting to know the new cohort; and I can honestly say it made such a huge difference. We learnt everyones names and a little background about each and every person. I feel like I know everyone since ages.&lt;/p&gt;
+
+&lt;p&gt;Wednesday started off with a stand-up session. We spoke about the previous day and what we intended to do during the course of the day. The coding started soon after this with our first challenge - Boris Bikes.&lt;/p&gt;
+
+&lt;p&gt;The challenge was easy at the start and got more complex as I progressed through it. It was presented in such a great way and we worked in pair during the week, repeating the challenges and progressing further. Also asking any questions we had to our peers or the coaches during stand-ups when necessary. &lt;/p&gt;
+
+&lt;p&gt;I also took part in the meditation session at 2pm during everyday. It was really relaxing and it was the first time I had taken part in something like this. As if that wasn't enough, I also took part in yoga on Thursday at 5pm! Once again it was the first time I had done yoga and I could feel it the day after. It was a good feeling though. Once again looking forward to the next session on Tuesday at 5pm :).&lt;/p&gt;
+
+&lt;p&gt;Overall my first week has been amazing at Makers and I look forward to Monday. I can't wait to get back in there and learn more and converse with such amazing people. The positive energy in that Makers building is indescribable. You need to get in there to feel it.&lt;/p&gt;
+
+&lt;p&gt;For now though, let me get back to my weekend challenge :P&lt;/p&gt;
+
+&lt;p&gt;Cya&lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>What is Red-Green-Refactor and how does it relate to TDD?</title><description>&lt;p&gt;So what is &lt;b&gt;&lt;font color="red"&gt;Red&lt;/font&gt;-&lt;font color="green"&gt;Green&lt;/font&gt;-&lt;font color="black"&gt;Refactor&lt;/font&gt;&lt;/b&gt; I hear you asking?&lt;/p&gt;
 
 &lt;p&gt;Red-Green-Refactor is one of many methods for conducting TDD (test driven development). The steps are red, green and refactor. These are defined below:&lt;/p&gt;
 
