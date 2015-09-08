@@ -1,4 +1,37 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Sat, 05 Sep 2015 21:45:33 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>First full-time week at Makers</title><description>&lt;p&gt;The first week is already over!? That went fast.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Tue, 08 Sep 2015 09:45:30 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>The SOLID principle of 'dependency inversion'</title><description>&lt;p&gt;The dependency inversion principle provides us with two recommendations:&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/li&gt;  
+&lt;li&gt;Abstractions should not depend upon details. Details should depend upon abstractions.&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;In simple words, you want to be able to change parts of your code without having to&lt;/p&gt;</description><link>http://localhost:2368/the-solid-principle-of-dependency-injection/</link><guid isPermaLink="false">a06fd50e-f314-40b6-a386-22faacf4a067</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Tue, 08 Sep 2015 09:45:12 GMT</pubDate><content:encoded>&lt;p&gt;The dependency inversion principle provides us with two recommendations:&lt;/p&gt;
+
+&lt;ul&gt;  
+&lt;li&gt;High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/li&gt;  
+&lt;li&gt;Abstractions should not depend upon details. Details should depend upon abstractions.&lt;/li&gt;  
+&lt;/ul&gt;
+
+&lt;p&gt;In simple words, you want to be able to change parts of your code without having to make multiple changes. This would enhance the usability of the code as it could potentially be used in many different scenarios and can be modified with ease if need be.&lt;/p&gt;
+
+&lt;p&gt;Dependency injection is the method used to succeed in dependency inversion. The dependency injection method is when you inject dependencies into an object rather than having the object create its own dependencies. This way you get more flexibility, less coupling and also testing such code is much easier. &lt;/p&gt;
+
+&lt;p&gt;An example of dependency injection is below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;# a typical approach&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;class Hacker&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  def initialize&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   @keyboard = Keyboard.new(:layout =&gt; 'us')&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;# and now with DI&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;class Hacker&lt;/code&gt; &lt;br&gt;
+&lt;code&gt; def initialize(keyboard)&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;    @keyboard = keyboard&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Usman&lt;/p&gt;</content:encoded></item><item><title>First full-time week at Makers</title><description>&lt;p&gt;The first week is already over!? That went fast.&lt;/p&gt;
 
 &lt;p&gt;This week was such an amazing week. Maybe one of the most fun weeks I've had in such a long time. &lt;/p&gt;
 
