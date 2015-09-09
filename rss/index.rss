@@ -1,4 +1,70 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Tue, 08 Sep 2015 09:45:30 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>The SOLID principle of 'dependency inversion'</title><description>&lt;p&gt;The dependency inversion principle provides us with two recommendations:&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Wed, 09 Sep 2015 10:27:42 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Difference between 'Composition' and 'Inheritance'</title><description>&lt;p&gt;Inheritance is when a class inherits fields and methods from its superclass. However subclasses are able to override these in order to change the default behaviour. &lt;/p&gt;
+
+&lt;p&gt;An example of this is presented below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class Ships&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;   def initialize&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter = 0&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;   def hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter += 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      "Sunk!" if @hit_counter &gt;= 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt;&lt;/p&gt;</description><link>http://localhost:2368/difference-between-composition-and-inheritance-2/</link><guid isPermaLink="false">c8b02b27-1b54-48eb-8c12-c34f1ea5a58f</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Wed, 09 Sep 2015 09:34:00 GMT</pubDate><content:encoded>&lt;p&gt;Inheritance is when a class inherits fields and methods from its superclass. However subclasses are able to override these in order to change the default behaviour. &lt;/p&gt;
+
+&lt;p&gt;An example of this is presented below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class Ships&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;   def initialize&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter = 0&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;   def hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter += 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      "Sunk!" if @hit_counter &gt;= 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class Submarine &amp;lt; Ships&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;End&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sub = Submarine.new&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;"Sunk!"&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice in the above example we did not have to create a 'hit' method in the 'Submarine' class as we inherited it from the 'Ships' class. However, the Submarine 'Sunk!' after 1 hit. Submarine should be hit 5 times for it to sink. For this we would have to override the inherited method. This is displayed below:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class Ships&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;   def hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter += 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      "Sunk!" if @hit_counter &gt;= 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Class Submarine &amp;lt; Ships&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   def hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      @hitcounter += 1&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;      "Sunk!" if @hit_counter &gt;= 5&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;   end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;End&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sub = Submarine.new&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;sub.hit&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;"Sunk!"&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In the above example Battleship 'is-a' Ship. If we used composition rather than inheritance we could let a battleship use functionality from Ship, without having to BE a ship. To do this we could use a module which contained the key 'ship-like' behaviour.&lt;/p&gt;
+
+&lt;p&gt;We may prefer composition to inheritance in situations in which we need a little more flexibility, perhaps when we are unsure as to how future classes will behave. The danger in using inheritance is that the sub-class is reliant on the superclass, so anything changed in the super-class will have knock on effects to all its sub-classes. This could turn the minor process of making small tweaks into a much longer and time consuming process.&lt;/p&gt;
+
+&lt;p&gt;Usman &amp;amp; Kyle&lt;/p&gt;</content:encoded></item><item><title>The SOLID principle of 'dependency inversion'</title><description>&lt;p&gt;The dependency inversion principle provides us with two recommendations:&lt;/p&gt;
 
 &lt;ul&gt;  
 &lt;li&gt;High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/li&gt;  
