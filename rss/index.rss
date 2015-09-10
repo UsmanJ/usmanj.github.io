@@ -1,4 +1,48 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Wed, 09 Sep 2015 10:27:42 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Difference between 'Composition' and 'Inheritance'</title><description>&lt;p&gt;Inheritance is when a class inherits fields and methods from its superclass. However subclasses are able to override these in order to change the default behaviour. &lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Becoming a Maker</title><description>Thoughts, stories and ideas.</description><link>http://localhost:2368/</link><generator>Ghost 0.6</generator><lastBuildDate>Thu, 10 Sep 2015 09:28:33 GMT</lastBuildDate><atom:link href="http://localhost:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Duck Typing</title><description>&lt;p&gt;Duck typing is used in object-oriented languages when the programmer is interested only in the default behaviour of an object rather than the class as a whole. &lt;/p&gt;
+
+&lt;p&gt;When duck typing is not used, the dependancy of one class on another is much greater and thus breaks the principle of dependency&lt;/p&gt;</description><link>http://localhost:2368/duck-typing/</link><guid isPermaLink="false">9ac0cec8-c5e7-4a3e-b24c-473080fd570d</guid><dc:creator>Usman Jamil</dc:creator><pubDate>Thu, 10 Sep 2015 09:28:19 GMT</pubDate><content:encoded>&lt;p&gt;Duck typing is used in object-oriented languages when the programmer is interested only in the default behaviour of an object rather than the class as a whole. &lt;/p&gt;
+
+&lt;p&gt;When duck typing is not used, the dependancy of one class on another is much greater and thus breaks the principle of dependency inversion. However, when duck typing is used, the dependency is reduced. &lt;/p&gt;
+
+&lt;p&gt;An example of this could be if there was a class Report which created reports and then contains a method which prints the reports.&lt;/p&gt;
+
+&lt;p&gt;Without duck typing:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;class Report&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  def body&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;     generate&lt;em&gt;reporty&lt;/em&gt;stuff&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;  def print&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;     JSONFormatter.new.format(body)&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;class JSONFormatter&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  def format(body)&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;     ...&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see in the above example, the print method is dependant on the JSONFormatter class as it is creating a new instance of this. Therefore it does't abide by the SOLID principles.&lt;/p&gt;
+
+&lt;p&gt;Below you can see the same code, but this time with duck typing.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;class Report&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  def body&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;     generate&lt;em&gt;reporty&lt;/em&gt;stuff&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;  def print(formatter: JSONFormatter.new)&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;     formatter.format body&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;  end&lt;/code&gt; &lt;br&gt;
+&lt;code&gt;end&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This code is much more clearer and less dependant on the JSONFormatter. We can now pass any type of formatter to our print method and it will work rather than break.&lt;/p&gt;
+
+&lt;p&gt;A quote which may make duck typing easier to understand; "If it looks like a duck and quacks like a duck, it's a duck".&lt;/p&gt;
+
+&lt;p&gt;Usman &amp;amp; Zhivko&lt;/p&gt;</content:encoded></item><item><title>Difference between 'Composition' and 'Inheritance'</title><description>&lt;p&gt;Inheritance is when a class inherits fields and methods from its superclass. However subclasses are able to override these in order to change the default behaviour. &lt;/p&gt;
 
 &lt;p&gt;An example of this is presented below:&lt;/p&gt;
 
